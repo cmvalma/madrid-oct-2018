@@ -1,39 +1,23 @@
-# Matplot y Seaborn
+# Lab: Viewing Real World Data - Happiness Index
 
-Estas son las cuestiones resultantes del lab:
+Proyecto a presentar en clase de Ironhack
 
-### Challenge 1
+##### Tareas
 
-Respuestas a 3, 5 y 6 por ej. salen con un código como este: 
-
-```
-[<matplotlib.lines.Line2D at 0x7f010b0d0da0>]
-```
-
-Esto no parece una descripción de objeto, parece sólo de la posición en memoria. Porqué sale?  (Entiendo que si hago una asignación dejará de salir, pero en qué casos sale? 
-
-Indexex below some binned histograms, don't  correspond to the graphic. For example the distribution of 'Age' variable with 10, 20, 50 bins, see the biggest bins clearly don fit the numbers. 
+- [x] Use a composed dataset from kaggle, join and cleanup the data (the requirements here is to open at least 2 files, it doesn’t matter if its csv or json)
+- [x] At least 3 histograms on different aggregated data. Do an analysis on which is the optimal bin parameter (the one that maximizes clarity on specified insight). Keep an eye on the dataset you choose, it must have at least 3 numeric columns to operate.
+- [x] Plot a scatter distribution of data for a joined column with any column you like
+- [x] Create a combined scatterplot with a two series you choosed, it should contain the legend for each scatterplot
+- [x] Create a plot for a category distribution (using seaborn violin plot o other kind of graph that fits better your data using catplot) https://seaborn.pydata.org/generated/seaborn.catplot.html
+- [x] Do a comparision with 3x3 subplot matrix. Plots can be anything you liked about the dataset
 
 
 
-#### Use the appropriate plot to visualize the column `Gender`
+##### Cuestiones a revisar: 
 
-How do I set different colors for each bar. Seems I have to use a palette? 
+Una vez que usas seaborn (sns.set), cualquier gráfico que uses, aunque no sea usando sns, sale con su formato... 
 
-#### Use the appropriate plot to visualize the column `Pclass`
-
-Can't enter three colors with names, like
-
-color=('darkblue', 'purple', 'darkred')
-
-it thinks Iḿ passing RGB values. But I cant even giving RGBs: 
-
-()'#00008b', '#800080', '#8B0000')  
-
-nor without the 'quotes '
+Ver por ejemplo la diferencia entre los cuatro primeros histogramas (la primera comparación de bins) y las siguientes... 
 
 
 
-### Wtf is faceting? (seaborn). Is the same as axes in matplotlib?
-
-https://seaborn.pydata.org/generated/seaborn.FacetGrid.html?highlight=facetgrid
